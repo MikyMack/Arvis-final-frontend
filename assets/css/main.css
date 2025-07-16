@@ -10435,6 +10435,7 @@ Primary style
   max-width: 600px;
   align-items: center;
   gap: 40px;
+  padding-right: 10px;
 }
 @media (max-width: 767px) {
   .bs-video-1-content-list {
@@ -11945,12 +11946,12 @@ Primary style
 }
 @media only screen and (min-width: 1600px) and (max-width: 1799px) {
   .bs-core-services-2-item .item-title {
-    font-size: 80px;
+    font-size: 30px;
   }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .bs-core-services-2-item .item-title {
-    font-size: 70px;
+    font-size: 30px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -17796,15 +17797,18 @@ Primary style
   letter-spacing: -0.03em;
   font-weight: 700;
   font-size: 25px;
-  color: #081421;
+  color: var(--bs-clr-white-1);
   margin-bottom: 13px;
+}
+.bs-footer-1-widget-title ul li a{
+  color: var(--bs-clr-white-1)!important;
 }
 .bs-footer-1-logo {
   margin-bottom: 33px;
 }
 .bs-footer-1-disc {
   max-width: 400px;
-  color: #7a7a7a;
+  color: var(--bs-clr-white-1);
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .bs-footer-1-disc {
@@ -17817,7 +17821,7 @@ Primary style
 .bs-footer-1-menu li a {
   font-family: var(--bs-font-2);
   text-transform: capitalize;
-  color: #7a7a7a;
+  color: var(--bs-clr-white-1);
   font-weight: 500;
   font-size: 17px;
   line-height: 1.5;
@@ -18758,7 +18762,7 @@ Primary style
 }
 .footer-logo{
 
-  height: 150px!important;
+  height: 80px!important;
 }
 /* 
     footer-5-end
