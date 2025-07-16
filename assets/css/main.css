@@ -18750,7 +18750,16 @@ Primary style
   opacity: 24%;
   z-index: -1;
 }
+@media(max-width:700px){
+  .home-testi{
+    margin-top:2rem!important;
+  }
 
+}
+.footer-logo{
+
+  height: 150px!important;
+}
 /* 
     footer-5-end
 */
