@@ -87,7 +87,7 @@ CSS INDEX
 }
 
 body {
-  font-family: var(--bs-font-1);
+  font-family: var(--bs-font-1)!important;
   font-size: 18px;
   font-weight: 400;
   -moz-osx-font-smoothing: grayscale;
@@ -7517,9 +7517,17 @@ Primary style
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .bs-core-feature-6-wrap .bs-core-feature-4-item {
   padding: 30px 68px;
+}
+@media(max-width:600px){
+  .bs-core-feature-4-item{
+    width: 100%!important;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .bs-core-feature-6-wrap .bs-core-feature-4-item {
@@ -18425,6 +18433,7 @@ Primary style
   .bs-footer-4-copyright-flex {
     justify-content: center;
     gap: 20px;
+    padding-bottom: 3rem;
   }
 }
 .bs-footer-4-copyright-text {
