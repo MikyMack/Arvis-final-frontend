@@ -5848,7 +5848,7 @@ Primary style
   }
 }
 @media(max-width:1276px){
-  ..bs-header-4-action-link{
+  .bs-header-4-action-link{
     display: none!important;
   }
 }
