@@ -20220,7 +20220,7 @@ Primary style
             color: #ffffff;
             margin-bottom: 0.5rem;
                   display: -webkit-box;
-  -webkit-line-clamp: 1; /* Show only 1 line */
+  -webkit-line-clamp: 1; 
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
