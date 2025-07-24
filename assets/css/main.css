@@ -20304,6 +20304,7 @@ Primary style
           width: 120px;
           background-color: #F16520;
           color:white;
+          border-radius: 5px;
           &:hover{
             background-color: white;
             color: #F16520;
