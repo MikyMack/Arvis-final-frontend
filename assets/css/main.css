@@ -20298,6 +20298,19 @@ Primary style
               justify-content: space-around;
             }
         }
+
+        .archi-btn button{
+          height: 50px;
+          width: 120px;
+          background-color: #F16520;
+          color:white;
+          &:hover{
+            background-color: white;
+            color: #F16520;
+            border-radius: 10px;
+            transition: 0.2s ease-in;
+          }
+        }
 /* 
     footer-5-end
 */
