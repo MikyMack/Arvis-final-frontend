@@ -137,16 +137,14 @@
             <section class="breadcrumb-area has-2 wa-p-relative" >
                 <div class="container bs-container-1">
                     <div class="breadcrumb-wrap">
-                        <a href="architectureDesigns.html" aria-label="name" class="breadcrumb-back-page-btn">
+                        <a href="architectureDesigns.html" aria-label="name" class="breadcrumb-back-page-btn " style="color: white;">
                             <i class="fa-solid fa-angle-left"></i>
                             Back 
                         </a>
                         <h1 class="breadcrumb-title wa-split-right wa-capitalize" data-split-delay="1.1s" >The Loft <br>
                            </h1>
 
-                        <div class="breadcrumb-bg-shape">
-                            <img src="assets/img/breadcrumb/breadcrumb-shape-2.png" alt="">
-                        </div>
+
                     </div>
                 </div>
             </section>
@@ -157,16 +155,29 @@
                 <div class="container bs-container-1">
 
                     <!-- img -->
-                    <div class="bs-project-details-img wa-fix wa-img-cover">
-                        <img src="assets/img/arvies/clint5.jpg" alt="">
-                    </div>
+ <div class="bs-project-details-img wa-fix wa-img-cover detiails-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper project-slider-track">
+                <div class="swiper-slide">
+                    <img src="assets/img/arvies/clint5.jpg" alt="Client 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/arvies/clint6.jpg" alt="Client 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/arvies/clint7.jpg" alt="Client 3">
+                </div>
+            </div>
+        
+        </div>
+    </div>
 
                     <ul class="bs-project-details-meta">
-                        <li><b>Client:</b>john</li>
+                      
                         <li><b>Category:</b>residential</li>
-                        <li><b>Start Date:</b>20 March, 2024</li>
-                        <li><b>End Date:</b>30 March, 2025</li>
-                        <li><b>Budgets:</b>₹1200/SQFT</li>
+                        <li><b>Area:</b>1500SQFT</li>
+                        <li><b>Location:</b>Kochi</li>
+                  
                     </ul>                    
 
                     <div class="bs-project-details-content">
@@ -181,9 +192,14 @@
 
 
 
-                        <h2>Unique features of the project</h2>
+                        <h2>Highlights</h2>
 
-                        <p>Preliminary designs or layouts serve as the foundation for any architectural project, offering a visual representation of the space's flow and structure. These initial plans focus on the arrangement of rooms, circulation paths, and functional zones to ensure optimal use of space. They provide a clear direction for the design, allowing clients to visualize the project’s potential before finalizing details. Based on feedback, these layouts can be adjusted to better align with the client’s needs, style preferences, and practical requirements. Preliminary designs set the tone for the overall vision and are crucial in achieving a successful architectural outcome.</p>
+                       <ul class="pb-5">
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+                                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+                                                                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+                                                                                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </li>
+                       </ul>
 
                   
                                 <div class="bs-project-details-content-gallery">
@@ -492,32 +508,34 @@
             </div>
             <div class="wa-overly"></div>
             <!-- offcanvas-end -->
-           <nav class="premium-mobile-navbar">
+                   <nav class="premium-mobile-navbar">
         <div class="premium-navbar-container">
             <a  href="index.html" class="premium-nav-link ">
               <img class="mob-nav-icon" src="assets/img/icon/menu.svg" alt="">
                 <span class="premium-nav-text">Home</span>
             </a>
-            
-            <a href="store.html" class="premium-nav-link active-premium-nav">
-                         <img class="mob-nav-icon" src="assets/img/icon/real.svg" alt="">
-                <span class="premium-nav-text">Sales</span>
-            </a>
-            
-            <a href="store.html" class="premium-nav-link active-premium-nav">
-              <img class="mob-nav-icon" src="assets/img/icon/rent.svg" alt="">
-                <span class="premium-nav-text">Rent</span>
-            </a>
-            
-            <a style="color: #f16520!important;" href="architecture.html" class="premium-nav-link">
+                <a style="color: #f16520!important;" href="architecture.html" class="premium-nav-link">
                 <img class="mob-nav-icon" src="assets/img/icon/architec.svg" alt="">
                 <span class="premium-nav-text">Archi</span>
             </a>
-            
-            <a href="interior.html" class="premium-nav-link">
+                    <a  href="interior.html" class="premium-nav-link">
                 <img class="mob-nav-icon" src="assets/img/icon/inder.svg" alt="">
                 <span class="premium-nav-text">Interior</span>
             </a>
+            
+         <a  href="store.html" class="premium-nav-link active-premium-nav">
+                         <img class="mob-nav-icon" src="assets/img/icon/real.svg" alt="">
+                <span class="premium-nav-text">real Estate</span>
+            </a>
+            
+            <a href="store.html" class="premium-nav-link active-premium-nav">
+              <img class="mob-nav-icon" src="assets/img/icon/phone.svg" alt="">
+                <span class="premium-nav-text">Contact</span>
+            </a>
+            
+        
+            
+    
             
        
         </div>
@@ -578,7 +596,36 @@ window.addEventListener('scroll', () => {
   
   lastScroll = currentScroll;
 });
+
+
+
     </script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'fade', // Set the effect to fade
+        fadeEffect: {
+            crossFade: true // Enable cross-fade effect
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        speed: 1500, // Set the transition speed to 1 second
+    });
+</script>
+
     </body>
 
 
