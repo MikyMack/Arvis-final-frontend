@@ -2858,7 +2858,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   transition: 300ms;
   width: 100%;
   height: 3px;
-  background: #000;
+  background: white;
   position: absolute;
 }
 .wa-offcanvas-close span:nth-child(1) {
@@ -18385,7 +18385,7 @@ Primary style
   color: var(--bs-clr-pr-1);
 }
 .bs-footer-4-contact .title {
-  font-size: 80px;
+  font-size: 50px;
   color: var(--bs-clr-white-1);
   font-weight: 500;
   margin-bottom: 41px;
@@ -18415,7 +18415,7 @@ Primary style
 .bs-footer-4-contact .disc-elm, .bs-footer-4-contact .link-elm {
   font-size: 28px;
   color: #888888;
-  border-bottom: 1px solid #888888;
+
   line-height: 2;
   position: relative;
   z-index: 1;
@@ -18988,7 +18988,7 @@ Primary style
         .stellar-price-amount {
             font-size: 24px;
             font-weight: 800;
-            color: #2c3e50;
+            color: white;
             margin-bottom: 5px;
         }
 
@@ -19002,7 +19002,7 @@ Primary style
         .prism-action-button {
             width: 100%;
             padding: 12px;
-            background: linear-gradient(135deg, #494747 0%, #ffffff 100%);
+            background: linear-gradient(135deg, #e8e7e7 0%, #ffffff 100%);
             color: var(--bs-clr-black-1);
             border: none;
             border-radius: 10px;
@@ -19016,7 +19016,9 @@ Primary style
 
         .prism-action-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(249, 249, 249, 0.4);
+            box-shadow: 0 8px 25px rgba(249, 249, 249, 0.2);
+                    background: linear-gradient(135deg, #ea7f22 0%, #ea8c19 100%);
+                    color: white;
         }
 
         .prism-action-button::before {
@@ -20116,7 +20118,7 @@ Primary style
         }
 
         .project-card {
-            background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
+           
             border-radius: 20px;
             overflow: hidden;
             box-shadow: 0 20px 40px rgba(0,0,0,0.4);
@@ -20133,7 +20135,7 @@ Primary style
 
         .image-slider-wrapper {
             position: relative;
-            height: 250px;
+            height: 300px;
             overflow: hidden;
         }
 
@@ -20145,7 +20147,7 @@ Primary style
 
         .slider-image {
             width: 100%;
-            height: 100%;
+            height: 500px;
             object-fit: cover;
             flex-shrink: 0;
         }
@@ -20212,12 +20214,14 @@ Primary style
 
         .project-details {
             padding: 1.5rem;
+     
+
         }
 
         .project-name {
             font-size: 1.3rem;
             font-weight: bold;
-            color: #ffffff;
+            color: white;
             margin-bottom: 0.5rem;
                   display: -webkit-box;
   -webkit-line-clamp: 1; 
@@ -20312,6 +20316,54 @@ Primary style
             transition: 0.2s ease-in;
           }
         }
+        .slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; /* Adjust as needed */
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.slider img {
+    min-width: 100%!important;
+    height: 300px!important;
+    object-fit: cover;
+}
+.detiails-slider{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.project-slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.project-slider-track img {
+    min-width: 100%;
+    height: 500px!important;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+@media(max-width:600px){
+  .project-slider-track img {
+    min-width: 100%;
+    height: 100%!important;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+}
 /* 
     footer-5-end
 */
